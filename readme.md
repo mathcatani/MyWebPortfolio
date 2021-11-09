@@ -2,7 +2,7 @@
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/mathcatani/MyWebPortfolio?style=plastic)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues-raw/mathcatani/MyWebPortfolio?style=for-the-badge)
 
 > Bem vindo ao meu primeiro projeto no GitHub! Website pessoal!
 
