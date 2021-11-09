@@ -1,0 +1,283 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Nunito:wght@300&family=Overpass&family=Oxygen:wght@300&display=swap");
+/*
+    font-family: 'Merienda', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+*/
+::-webkit-scrollbar {
+  display: none;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+body div.container {
+  width: 100%;
+  height: 100%;
+  -ms-scroll-snap-type: both mandatory;
+      scroll-snap-type: both mandatory;
+  overflow: scroll;
+  background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+}
+body div.container section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  /*
+  :nth-of-type()
+  A pseudo-classe CSS :nth-of-type() corresponde a um ou mais elementos
+  de um dado tipo, baseado em sua posição entre um grupo de irmãos.
+
+  SINTAXE
+  A pseudo-classe nth-of-type é especificada com um único argumento,
+  o qual representa o padrão para a correspondência dos elementos. 
+  */
+  /*SECTION HOME PAGE*/
+  /* SECTION RESUME PAGE */
+  /* SECTION SERVICES PAGE */
+  /* SECTION CONTACT PAGE */
+}
+body div.container section:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8vh;
+  max-width: 100%;
+  min-width: 50%;
+  width: 100%;
+  max-height: 100%;
+  min-height: 50%;
+  height: 100%;
+}
+body div.container section:nth-of-type(1) div.div.avatar {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body div.container section:nth-of-type(1) img.avatar.img {
+  align-items: center;
+  border-radius: 50%;
+  border-color: black;
+  border-width: 2rem;
+  width: 150px;
+  height: 150px;
+}
+body div.container section:nth-of-type(1) h1.me-name {
+  color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem;
+  font-family: Merienda;
+  font-size: 2.2rem;
+  font-weight: 400;
+  width: 100%;
+  transform: translate(-50%, 30%);
+  overflow: hidden;
+  -webkit-animation: slideFromLeft 0.7s normal;
+          animation: slideFromLeft 0.7s normal;
+  margin-left: 100%;
+}
+body div.container section:nth-of-type(1) h1.me-name span#name {
+  margin-left: 0.5rem;
+  color: deepskyblue;
+}
+body div.container section:nth-of-type(1) p.name-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Oxygen;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  width: 75%;
+  overflow: hidden;
+  -webkit-animation: slideFromRight 0.8s normal;
+          animation: slideFromRight 0.8s normal;
+}
+body div.container section:nth-of-type(1) div.home-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 100%;
+  min-width: 30%;
+  height: auto;
+  margin-top: 1rem;
+}
+body div.container section:nth-of-type(1) div.home-me h2.me.title-one {
+  width: 50%;
+  height: 100%;
+  margin: 2%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+  color: black;
+  font-family: Merienda;
+}
+body div.container section:nth-of-type(1) div.home-me h2.me.title-two {
+  width: 50%;
+  height: 100%;
+  margin: 2%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+  color: black;
+  font-family: Merienda;
+}
+body div.container section:nth-of-type(1) button.download-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 25%;
+  max-height: 3rem;
+  min-width: 15%;
+  min-height: 3rem;
+  margin: 1rem;
+  font-family: Nunito;
+  font-weight: 600;
+  resize: none;
+}
+body div.container section:nth-of-type(2) {
+  display: none;
+  color: blue;
+}
+body div.container section:nth-of-type(3) {
+  display: none;
+  color: yellow;
+}
+body div.container section:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  min-width: 50%;
+  width: 100%;
+  max-height: 100%;
+  min-height: 50%;
+  height: 100%;
+}
+body div.container section:nth-of-type(4) form.email {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body div.container section:nth-of-type(4) div.form-input {
+  width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0rem;
+}
+body div.container section:nth-of-type(4) h1.form-title {
+  font-family: Oxygen;
+}
+body div.container section:nth-of-type(4) input.input-name {
+  width: 50%;
+  margin: 0.3rem;
+  font-family: Nunito;
+  font-size: 12px;
+}
+body div.container section:nth-of-type(4) input.input-email {
+  width: 50%;
+  margin: 0.3rem;
+  font-family: Nunito;
+  font-size: 12px;
+}
+body div.container section:nth-of-type(4) textarea.input-message {
+  margin: 0.4rem;
+  max-width: 50%;
+  max-height: 100px;
+  height: 100px;
+  width: 100%;
+  font-family: Nunito;
+  font-size: 12px;
+  font-weight: 400;
+  resize: none;
+}
+body div.container section:nth-of-type(4) p.recaptcha-terms {
+  font-family: Nunito;
+  font-size: 0.6rem;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+body div.container section:nth-of-type(4) button.g-recaptcha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  max-height: 3rem;
+  min-width: 20%;
+  min-height: 3rem;
+  margin: 1rem;
+  font-family: Nunito;
+  font-weight: 600;
+  resize: none;
+}
+
+@-webkit-keyframes slideFromLeft {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+@-webkit-keyframes slideFromRight {
+  0% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+@keyframes slideFromRight {
+  0% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}/*# sourceMappingURL=main.css.map */

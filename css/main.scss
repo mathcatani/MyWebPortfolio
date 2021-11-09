@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Nunito:wght@300&family=Overpass&family=Oxygen:wght@300&display=swap');
+/*
+    font-family: 'Merienda', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+*/
+::-webkit-scrollbar{
+    display: none;
+}
+.grecaptcha-badge { 
+    visibility: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    div.container{
+        width: 100%;
+        height: 100%;
+        scroll-snap-type: both mandatory;
+        overflow: scroll;
+
+        background:
+            linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        
+
+        section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            scroll-snap-align: start;
+            
+
+            /*
+            :nth-of-type()
+            A pseudo-classe CSS :nth-of-type() corresponde a um ou mais elementos
+            de um dado tipo, baseado em sua posição entre um grupo de irmãos.
+
+            SINTAXE
+            A pseudo-classe nth-of-type é especificada com um único argumento,
+            o qual representa o padrão para a correspondência dos elementos. 
+            */
+
+            /*SECTION HOME PAGE*/
+            &:nth-of-type(1) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 8vh;
+                max-width: 100%;
+                min-width: 50%;
+                width: 100%;
+                max-height: 100%;
+                min-height: 50%;
+                height: 100%;
+
+                div.div.avatar{
+                    width: 160px;
+                    height: 160px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                img.avatar.img{
+                    align-items: center;
+                    border-radius: 50%;
+                    border-color: black;
+                    border-width: 2rem;
+                    width: 150px;
+                    height: 150px;
+                }
+                h1.me-name{
+                    color: black;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    margin: 1rem;
+                    font-family: Merienda;
+                    font-size: 2.2rem;
+                    font-weight: 400;
+                    width: 100%;
+                    transform: translate(-50%, 30%);
+                    overflow: hidden;
+                    animation: slideFromLeft .7s normal;
+                    margin-left: 100%;
+
+                    span#name{
+                        margin-left: .5rem;
+                        color: deepskyblue;
+                    }
+                }
+                p.name-description{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    font-family: Oxygen;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    letter-spacing: .1rem;
+                    width: 75%;
+                    overflow: hidden;
+                    animation: slideFromRight .8s normal;
+                }
+                div.home-me{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    max-width: 100%;
+                    min-width: 30%;
+                    height: auto;
+                    margin-top: 1rem;
+
+                    h2.me.title-one{
+                        width: 50%;
+                        height: 100%;
+                        margin: 2%;
+                        display: flex;
+                        align-items: center;
+                        align-content: center;
+                        justify-content: center;
+                        text-align: center;
+                        font-size: .8rem;
+                        color: black;
+                        font-family: Merienda;
+                    }
+                    h2.me.title-two{
+                        width: 50%;
+                        height: 100%;
+                        margin: 2%;
+                        display: flex;
+                        align-items: center;
+                        align-content: center;
+                        justify-content: center;
+                        text-align: center;
+                        font-size: .8rem;
+                        color: black;
+                        font-family: Merienda;
+                    }
+                }
+                button.download-cv{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    max-width: 25%;
+                    max-height: 3rem;
+                    min-width: 15%;
+                    min-height: 3rem;
+                    margin: 1rem;
+                    font-family: Nunito;
+                    font-weight: 600;
+                    resize: none;
+                }
+            }
+            /* SECTION RESUME PAGE */
+            &:nth-of-type(2) {
+                display: none;
+                color: blue;
+            }
+            /* SECTION SERVICES PAGE */
+            &:nth-of-type(3) {
+                display: none;
+                color: yellow;
+            }
+            /* SECTION CONTACT PAGE */
+            &:nth-of-type(4) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 100%;
+                min-width: 50%;
+                width: 100%;
+                max-height: 100%;
+                min-height: 50%;
+                height: 100%;
+
+                form.email{
+                    width: 500px;
+                    height: 500px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                div.form-input{
+                    width: 500px;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0rem;
+                }
+                h1.form-title{
+                    font-family: Oxygen;
+                }
+                input.input-name{
+                    width: 50%;
+                    margin: .3rem;
+                    font-family: Nunito;
+                    font-size: 12px;
+                }
+                input.input-email{
+                    width: 50%;
+                    margin: .3rem;
+                    font-family: Nunito;
+                    font-size: 12px;
+                }
+                textarea.input-message{
+                    margin: .4rem;
+                    max-width: 50%;
+                    max-height: 100px; 
+                    height: 100px;
+                    width: 100%;
+                    font-family: Nunito;
+                    font-size: 12px;
+                    font-weight: 400;
+                    resize: none;
+                }
+                p.recaptcha-terms{
+                    font-family: Nunito;
+                    font-size: .6rem;
+                    font-weight: 600;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    text-align: center;
+                    width: 50%;
+                }
+                button.g-recaptcha{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    max-width: 50%;
+                    max-height: 3rem;
+                    min-width: 20%;
+                    min-height: 3rem;
+                    margin: 1rem;
+                    font-family: Nunito;
+                    font-weight: 600;
+                    resize: none;
+                }
+            }
+        }
+    }
+}
+@keyframes slideFromLeft {
+    0%{
+        margin-left: 0;
+    }
+    
+    100%{
+        margin-left: 100%;
+    }
+}
+@keyframes slideFromRight {
+    0%{
+        margin-left: 100%;
+    }
+    
+    100%{
+        margin-left: 0%;
+    }
+}

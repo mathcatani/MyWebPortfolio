@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <title>Math</title>
+</head>
+<body id="particles-js">
+    <div class="container">
+        <section class="section home">
+            <div class="div avatar">
+                <img class="avatar img"src="/img/avatar.jpg">
+            </div>
+            <h1 class="me-name">I'm  <span id="name">Matheus</span>,</h1>
+            <p class="name-description">Industrial Software Developer &<br> Automation Engineering Student.</p>
+            <button class="download-cv" type="button">Download CV</button>
+        </section>
+        <section class="section resume">
+            <h1>RESUME</h1>
+            <div clas="skills container">
+                <h3 class="skills">Skills</h3>
+                <p class="p skills">
+                    Automation Engineering Knowledges <br>
+                        ● English; <br>
+                        ● Portuguese; <br>
+                        ● PLC Programming; <br>
+                        ● Frequency Inverter; <br>
+                        ● Industry 4.0 learning; <br>
+                        ● Parameterizing; <br>
+                        ● IoT Development; <br>
+                        ● Blockchain learning; <br>
+                        ● Supply Chain learning. <br>
+                    Jr. Software Engineering Knowledges <br>
+                        ● Oriented Object programming; <br> 
+                        ● Microsoft .NET, C#; <br>
+                        ● Clean Code/SOLID; <br>
+                        ● HTML/CSS/SASS; <br>
+                        ● Basics of JS/React; <br>
+                        ● T-SQL; <br>
+                        ● Entity Framework; <br>
+                        ● Domain-Driven Design; <br>
+                        ● Microservices. <br>
+                </P>
+            </div>
+        </section>
+        <section class="section services">
+            <h1>SERVICES</h1>
+        </section>
+        <section class="section contact">
+            <div class="contact">
+                <div class="contact email">
+                    <form class="email">
+                        <div class="form-input">
+                            <h1 class="form-title">Contact</h1>
+                            <input 
+                            class="input-name" 
+                            placeholder="Name" type="text" required="required">
+                            <input 
+                            class="input-email" 
+                            placeholder="E-mail" type="email" required="required">
+                            <textarea 
+                            maxlength="120" 
+                            class="input-message" required="required">Good Morning, I'm analyzing your resume, we can talk about a possible work position?</textarea>
+                            <p class="recaptcha-terms">
+                                This site is protected by reCAPTCHA.
+                                <a class="recaptcha-links" href="https://policies.google.com/privacy">
+                                Google Privacy Policy</a>&nbspand 
+                                <a class="recaptcha-links" href="https://policies.google.com/terms">
+                                &nbspTerms of Service</a>&nbspapply.
+                            </p>
+                            <button 
+                            id="demo-form"
+                            class="g-recaptcha" 
+                            type="submit" 
+                            data-sitekey="6LcIzakcAAAAAPnX5ipzO6sXtGoxh0Nwcqg6NZT1" 
+                            data-callback='onSubmit' 
+                            data-action='submit'>Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>    
+    </div>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("demo-form").submit();
+        }
+    </script>
+    <script>
+        function onClick(e) {
+          e.preventDefault();
+          grecaptcha.ready(function() {
+            grecaptcha.execute('6LcIzakcAAAAAPnX5ipzO6sXtGoxh0Nwcqg6NZT1', {action: 'submit'}).then(function(token) {
+                // Add your logic to submit to your backend server here.
+            });
+          });
+        }
+    </script>
+</body>
+</html>
