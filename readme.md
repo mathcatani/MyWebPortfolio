@@ -6,6 +6,15 @@
 
 > Bem vindo ao meu primeiro projeto no GitHub! Website pessoal!
 
+## Como visualizar a página
+
+```
+1º - Clone o repositório;
+2º - Extraia o arquivo;
+3º - Abra a pasta recem extraida;
+4º - Abra a pasta 'src';
+5º - Execute o arquivo 'index.html' com seu navegador.
+```
 ### Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
