@@ -9,7 +9,7 @@
 ## Como visualizar a página
 
 ```
-1º - Clone o repositório;
+1º - Faça o download do repositório;
 2º - Extraia o arquivo;
 3º - Abra a pasta recem extraida;
 4º - Abra a pasta 'src';
