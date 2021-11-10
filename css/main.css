@@ -25,7 +25,8 @@ body div.container {
   -ms-scroll-snap-type: both mandatory;
       scroll-snap-type: both mandatory;
   overflow: scroll;
-  background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+  background: rgb(233, 233, 233);
+  
 }
 body div.container section {
   display: flex;
