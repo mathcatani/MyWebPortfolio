@@ -9,11 +9,11 @@
 ## Como visualizar a página
 
 ```
-1º - Faça o download do repositório;
-2º - Extraia o arquivo;
-3º - Abra a pasta recem extraida;
-4º - Abra a pasta 'src';
-5º - Execute o arquivo 'index.html' com seu navegador.
+1º - Faça o download do repositório
+2º - Extraia o arquivo
+3º - Abra a pasta recem extraida
+4º - Abra a pasta 'src'
+5º - Execute o arquivo 'index.html' com seu navegador
 ```
 ### Ajustes e melhorias
 
